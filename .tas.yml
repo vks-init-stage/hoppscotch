@@ -1,0 +1,79 @@
+postMerge :
+  
+  subModules:          #Not to be changed
+      - name: hoppscotch-cli      #Can be changed
+        path : "./packages/hoppscotch-cli"
+        pattern: 
+          - "./src/__tests__/**/*.*.ts"
+        
+        framework : jest
+        
+        preRun: 
+          command:
+              - cd ../..
+              - npm install -g pnpm
+              - pnpm install
+              - cd packages/hoppscotch-cli
+              - pnpm install 
+        postRun:
+            command:
+              - node --version
+        configFile : "./jest.config.js"
+        
+      - name: hoppscotch-js-sandbox       
+        path : "./packages/hoppscotch-js-sandbox"
+        pattern: 
+          - "./src/__tests__/**/*.*.ts"
+        
+        framework : jest
+        
+        preRun: 
+          command:
+              - cd ../..
+              - npm install -g pnpm
+              - pnpm install
+              - cd packages/hoppscotch-js-sandbox
+              - pnpm install 
+          
+        postRun:
+            command:
+              - node --version
+        configFile : "./jest.config.js"
+        
+preMerge : 
+  
+  subModules:          #Not to be changed
+      - name: hoppscotch-cli      #Can be changed
+        path : "./packages/hoppscotch-cli"
+        pattern: 
+          - "./src/__tests__/**/*.*.ts"
+        
+        framework : jest
+        
+        preRun: 
+          command:
+              - npm i
+        postRun:
+            command:
+              - node --version
+        configFile : "./jest.config.js"
+        
+      - name: hoppscotch-js-sandbox       
+        path : "./packages/hoppscotch-js-sandbox"
+        pattern: 
+          - "./src/__tests__/**/*.*.ts"
+        
+        framework : jest
+        
+        preRun: 
+          command:
+              - npm i
+          
+        postRun:
+            command:
+              - node --version
+        configFile : "./jest.config.js"
+        
+  
+parallelism: 2 # this will be depricated in future
+version : 2.0
