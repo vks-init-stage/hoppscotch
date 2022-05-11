@@ -11,7 +11,7 @@ postMerge :
         preRun: 
           command:
               - cd ../..
-              - npm install -g pnpm
+              - npm install  pnpm
               - pnpm install
               - cd packages/hoppscotch-cli
               - pnpm install 
@@ -30,7 +30,7 @@ postMerge :
         preRun: 
           command:
               - cd ../..
-              - npm install -g pnpm
+              - npm install  pnpm
               - pnpm install
               - cd packages/hoppscotch-js-sandbox
               - pnpm install 
