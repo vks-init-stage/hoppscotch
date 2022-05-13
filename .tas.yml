@@ -16,7 +16,7 @@ postMerge :
         postRun:
             command:
               - node --version
-        configFile : "./jest.config.js"
+        configFile : "./packages/hoppscotch-cli/jest.config.js"
         
       - name: hoppscotch-js-sandbox       
         path : "./"
@@ -29,7 +29,7 @@ postMerge :
         postRun:
             command:
               - node --version
-        configFile : "./jest.config.js"
+        configFile : "./packages/hoppscotch-js-sandbox/jest.config.js"
         
 preMerge : 
   
@@ -43,7 +43,7 @@ preMerge :
         postRun:
             command:
               - node --version
-        configFile : "./jest.config.js"
+        configFile : "./packages/hoppscotch-cli/jest.config.js"
         
       - name: hoppscotch-js-sandbox       
         path : "./"
@@ -55,7 +55,7 @@ preMerge :
         postRun:
             command:
               - node --version
-        configFile : "./jest.config.js"
+        configFile : "./packages/hoppscotch-js-sandbox/jest.config.js"
         
   
 parallelism: 2 # this will be depricated in future
