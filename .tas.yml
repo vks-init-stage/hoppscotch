@@ -11,7 +11,9 @@ postMerge :
         
         framework : jest
         
-        
+        preRun: 
+          command:
+            - pnpm install
         postRun:
             command:
               - node --version
@@ -23,7 +25,10 @@ postMerge :
           - "./src/__tests__/**/*.*.ts"
         
         framework : jest
-         
+        
+        preRun: 
+          command:
+            - pnpm install
           
         postRun:
             command:
@@ -39,7 +44,9 @@ preMerge :
           - "./src/__tests__/**/*.*.ts"
         
         framework : jest
-        
+        preRun: 
+          command:
+            - pnpm install
         postRun:
             command:
               - node --version
@@ -51,7 +58,9 @@ preMerge :
           - "./src/__tests__/**/*.*.ts"
         
         framework : jest
-        
+        preRun: 
+          command:
+            - pnpm install
           
         postRun:
             command:
