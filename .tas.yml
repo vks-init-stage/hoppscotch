@@ -1,4 +1,7 @@
 postMerge :
+  preRun: 
+    command:
+      - pnpm install
   
   subModules:          #Not to be changed
       - name: hoppscotch-cli      #Can be changed
@@ -8,12 +11,7 @@ postMerge :
         
         framework : jest
         
-        preRun: 
-          command:
-              - cd ../..
-              - pnpm install
-              - cd packages/hoppscotch-cli
-              - pnpm install 
+        
         postRun:
             command:
               - node --version
@@ -25,13 +23,7 @@ postMerge :
           - "./src/__tests__/**/*.*.ts"
         
         framework : jest
-        
-        preRun: 
-          command:
-              - cd ../..
-              - pnpm install
-              - cd packages/hoppscotch-js-sandbox
-              - pnpm install 
+         
           
         postRun:
             command:
@@ -48,9 +40,6 @@ preMerge :
         
         framework : jest
         
-        preRun: 
-          command:
-              - npm i
         postRun:
             command:
               - node --version
@@ -63,9 +52,6 @@ preMerge :
         
         framework : jest
         
-        preRun: 
-          command:
-              - npm i
           
         postRun:
             command:
