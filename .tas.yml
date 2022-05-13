@@ -31,7 +31,7 @@ postMerge :
         postRun:
             command:
               - node --version
-        configFile : "./packages/hoppscotch-js-sandbox/jest.config.js"
+        configFile : "./packages/hoppscotch-app/jest.config.js"
         
 preMerge : 
   
