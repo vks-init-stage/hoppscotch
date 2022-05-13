@@ -20,6 +20,19 @@ postMerge :
               - node --version
         configFile : "./packages/hoppscotch-js-sandbox/jest.config.js"
         
+      - name: hoppscotch-app      
+        path : "./"
+        pattern: 
+          - "./packages/hoppscotch-app/src/__tests__/**/*.*.ts"
+        
+        framework : jest
+        
+          
+        postRun:
+            command:
+              - node --version
+        configFile : "./packages/hoppscotch-js-sandbox/jest.config.js"
+        
 preMerge : 
   
   subModules:          #Not to be changed
