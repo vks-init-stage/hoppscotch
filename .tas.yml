@@ -5,30 +5,24 @@ postMerge :
   
   subModules:          #Not to be changed
       - name: hoppscotch-cli      #Can be changed
-        path : "./packages/hoppscotch-cli"
+        path : "./"
         pattern: 
-          - "./src/__tests__/**/*.*.ts"
+          - "./packages/hoppscotch-cli/src/__tests__/**/*.*.ts"
         
         framework : jest
-        
-        preRun: 
-          command:
-            - pnpm install
+
         postRun:
             command:
               - node --version
         configFile : "./jest.config.js"
         
       - name: hoppscotch-js-sandbox       
-        path : "./packages/hoppscotch-js-sandbox"
+        path : "./"
         pattern: 
-          - "./src/__tests__/**/*.*.ts"
+          - "./packages/hoppscotch-js-sandbox/src/__tests__/**/*.*.ts"
         
         framework : jest
         
-        preRun: 
-          command:
-            - pnpm install
           
         postRun:
             command:
@@ -39,28 +33,22 @@ preMerge :
   
   subModules:          #Not to be changed
       - name: hoppscotch-cli      #Can be changed
-        path : "./packages/hoppscotch-cli"
+        path : "./"
         pattern: 
-          - "./src/__tests__/**/*.*.ts"
+          - "./packages/hoppscotch-cli/src/__tests__/**/*.*.ts"
         
         framework : jest
-        preRun: 
-          command:
-            - pnpm install
         postRun:
             command:
               - node --version
         configFile : "./jest.config.js"
         
       - name: hoppscotch-js-sandbox       
-        path : "./packages/hoppscotch-js-sandbox"
+        path : "./"
         pattern: 
-          - "./src/__tests__/**/*.*.ts"
+          - "./packages/hoppscotch-js-sandbox/src/__tests__/**/*.*.ts"
         
         framework : jest
-        preRun: 
-          command:
-            - pnpm install
           
         postRun:
             command:
