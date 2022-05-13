@@ -6,16 +6,6 @@ postMerge :
       - pnpm install jest-config -w
   
   subModules:          #Not to be changed
-      - name: hoppscotch-cli      #Can be changed
-        path : "./"
-        pattern: 
-          - "./packages/hoppscotch-cli/src/__tests__/**/*.*.ts"
-        
-        framework : jest
-
-        postRun:
-            command:
-              - node --version
         
       - name: hoppscotch-js-sandbox       
         path : "./"
