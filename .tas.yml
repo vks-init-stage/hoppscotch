@@ -48,7 +48,7 @@ preMerge :
               - node --version
         configFile : "./packages/hoppscotch-js-sandbox/jest.config.js"
         
-     - name: hoppscotch-app      
+      - name: hoppscotch-app      
         path : "./"
         pattern: 
           - "./packages/hoppscotch-app/src/__tests__/**/*.*.ts"
