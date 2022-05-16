@@ -10,7 +10,7 @@ postMerge :
       - name: hoppscotch-app      
         path : "./"
         pattern: 
-          - "./packages/hoppscotch-app/src/__tests__/**/*.*.ts"
+          - "./packages/hoppscotch-app/**/__tests__/**/*.spec.js"
         
         framework : jest
         
