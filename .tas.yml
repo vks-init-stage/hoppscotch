@@ -8,17 +8,18 @@ postMerge :
   subModules:          #Not to be changed
       
       - name: hoppscotch-app      
-        path : "./"
+        path : "./packages/hoppscotch-app/"
         pattern: 
-          - "./packages/hoppscotch-app/**/__tests__/**/*.spec.js"
+          - "./**/__tests__/**/*.spec.js"
         
         framework : jest
         
           
         postRun:
             command:
-              - node --version
-        configFile : "./packages/hoppscotch-app/jest.config.js"
+              - pnpm install jest -w
+              - pnpm install jest-config -w
+        configFile : "./jest.config.js"
       
         
       
