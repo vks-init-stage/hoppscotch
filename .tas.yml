@@ -10,15 +10,14 @@ postMerge :
       - name: hoppscotch-app      
         path : "./packages/hoppscotch-app/"
         pattern: 
-          - "./**/__tests__/**/*.spec.js"
+          - "./packages/hoppscotch-app/**/__tests__/**/*.spec.js"
         
         framework : jest
         
           
         postRun:
             command:
-              - pnpm install jest -w
-              - pnpm install jest-config -w
+              - node --version 
         configFile : "./jest.config.js"
       
         
