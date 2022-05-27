@@ -45,7 +45,7 @@ postMerge :
         postRun:
             command:
               - node --version 
-        configFile : "./jest.config.ts" 
+        configFile : "./jest.config.js" 
         
         
         
