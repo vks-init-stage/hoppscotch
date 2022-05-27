@@ -14,7 +14,10 @@ postMerge :
         
         framework : jest
         
-          
+        preRun:
+          command:
+            - pnpm i
+            
         postRun:
             command:
               - node --version 
@@ -28,7 +31,10 @@ postMerge :
         
         framework : jest
         
-          
+        preRun:
+          command:
+            - pnpm i
+        
         postRun:
             command:
               - node --version 
@@ -41,7 +47,10 @@ postMerge :
         
         framework : jest
         
-          
+        preRun:
+          command:
+            - pnpm i
+        
         postRun:
             command:
               - node --version 
