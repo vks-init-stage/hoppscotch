@@ -7,21 +7,21 @@ postMerge :
   
   subModules:          #Not to be changed
       
-      - name: hoppscotch-app      
-        path : "./packages/hoppscotch-app/"
-        pattern: 
-          - "./**/__tests__/**/*.spec.js"
+#       - name: hoppscotch-app      
+#         path : "./packages/hoppscotch-app/"
+#         pattern: 
+#           - "./**/__tests__/**/*.spec.js"
         
-        framework : jest
+#         framework : jest
         
-        preRun:
-          command:
-            - pnpm i
+#         preRun:
+#           command:
+#             - pnpm i
             
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js"
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js"
       
         
       - name: hoppscotch-cli      
