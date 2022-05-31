@@ -17,7 +17,7 @@ postMerge :
         preRun:
           command:
             - cp .env.example .env
-            - npm i
+            - pnpm i
             
         postRun:
             command:
