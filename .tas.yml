@@ -16,7 +16,7 @@ postMerge :
         
         preRun:
           command:
-            - cp .env.sample .env
+            - cp .env.example .env
             
         postRun:
             command:
