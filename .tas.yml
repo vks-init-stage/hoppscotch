@@ -7,54 +7,54 @@ postMerge :
   
   subModules:          #Not to be changed
       
-#       - name: hoppscotch-app      
-#         path : "./packages/hoppscotch-app/"
+      - name: hoppscotch-app      
+        path : "./packages/hoppscotch-app/"
+        pattern: 
+          - "./**/__tests__/**/*.spec.js"
+        
+        framework : jest
+        
+        preRun:
+          command:
+            - pnpm i
+            
+        postRun:
+            command:
+              - node --version 
+        configFile : "./jest.config.js"
+      
+        
+#       - name: hoppscotch-cli      
+#         path : "./packages/hoppscotch-cli/"
 #         pattern: 
-#           - "./**/__tests__/**/*.spec.js"
+#           - "./src/__tests__/**/*.spec.ts"
         
 #         framework : jest
         
 #         preRun:
 #           command:
 #             - pnpm i
-            
+        
 #         postRun:
 #             command:
 #               - node --version 
-#         configFile : "./jest.config.js"
-      
+#         configFile : "./jest.config.ts"
         
-      - name: hoppscotch-cli      
-        path : "./packages/hoppscotch-cli/"
-        pattern: 
-          - "./src/__tests__/**/*.spec.ts"
+#       - name: hoppscotch-js-sandbox     
+#         path : "./packages/hoppscotch-js-sandbox/"
+#         pattern: 
+#           - "./src/__tests__/**/*.spec.ts"
         
-        framework : jest
+#         framework : jest
         
-        preRun:
-          command:
-            - pnpm i
+#         preRun:
+#           command:
+#             - pnpm i
         
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.ts"
-        
-      - name: hoppscotch-js-sandbox     
-        path : "./packages/hoppscotch-js-sandbox/"
-        pattern: 
-          - "./src/__tests__/**/*.spec.ts"
-        
-        framework : jest
-        
-        preRun:
-          command:
-            - pnpm i
-        
-        postRun:
-            command:
-              - node --version 
-        configFile : "./jest.config.js" 
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.js" 
         
         
         
