@@ -1,8 +1,7 @@
 postMerge :
   preRun: 
     command:
-      - pnpm install
-      - pnpm install jest-config -w
+      - pnpm install --shamefully-hoist=true 
       - cp ./packages/hoppscotch-app/.env.example ./packages/hoppscotch-app/.env
   
   subModules:          #Not to be changed
@@ -33,7 +32,7 @@ postMerge :
         
         preRun:
           command:
-            - pnpm i
+            - pnpm i  --shamefully-hoist=true 
             - npm run prepublish
             - npm run prettier-format
             - npm run do-typecheck
