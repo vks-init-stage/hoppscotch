@@ -13,9 +13,9 @@ postMerge :
         
         framework : jest
         
-        preRun:
-          command:
-            - pnpm i  --shamefully-hoist=true 
+#         preRun:
+#           command:
+#             - pnpm i  --shamefully-hoist=true 
             
         postRun:
             command:
@@ -32,9 +32,8 @@ postMerge :
         
         preRun:
           command:
-            - pnpm i  --shamefully-hoist=true 
+#             - pnpm i  --shamefully-hoist=true 
             - npm run prepublish
-            - npm run prettier-format
             - npm run do-typecheck
         
         postRun:
@@ -49,9 +48,9 @@ postMerge :
         
         framework : jest
         
-        preRun:
-          command:
-            - pnpm i  --shamefully-hoist=true 
+#         preRun:
+#           command:
+#             - pnpm i  --shamefully-hoist=true 
         
         postRun:
             command:
