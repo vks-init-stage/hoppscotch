@@ -56,6 +56,10 @@ postMerge :
         
         
 preMerge : 
+  preRun: 
+    command:
+      - pnpm install --shamefully-hoist=true 
+      - cp ./packages/hoppscotch-app/.env.example ./packages/hoppscotch-app/.env
   
   subModules:          #Not to be changed
 
