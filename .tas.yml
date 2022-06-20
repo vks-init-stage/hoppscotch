@@ -6,39 +6,36 @@ postMerge :
   
   subModules:          #Not to be changed
       
-#       - name: hoppscotch-app      
-#         path : "./packages/hoppscotch-app/"
-#         pattern: 
-#           - "./**/__tests__/**/*.spec.js"
-        
-#         framework : jest
-        
-# #         preRun:
-# #           command:
-# #             - pnpm i  --shamefully-hoist=true 
-            
-#         postRun:
-#             command:
-#               - node --version 
-#         configFile : "./jest.config.js"
-      
-        
-      - name: hoppscotch-cli      
-        path : "./packages/hoppscotch-cli/"
+      - name: hoppscotch-app      
+        path : "./packages/hoppscotch-app/"
         pattern: 
-          - "./src/__tests__/**/*.spec.ts"
+          - "./**/__tests__/**/*.spec.js"
         
         framework : jest
         
-        preRun:
-          command:
-            - npm run prepublish
-            - npm run do-typecheck
-        
+            
         postRun:
             command:
               - node --version 
-        configFile : "./jest.config.ts"
+        configFile : "./jest.config.js"
+      
+        
+#       - name: hoppscotch-cli      
+#         path : "./packages/hoppscotch-cli/"
+#         pattern: 
+#           - "./src/__tests__/**/*.spec.ts"
+        
+#         framework : jest
+        
+#         preRun:
+#           command:
+#             - npm run prepublish
+#             - npm run do-typecheck
+        
+#         postRun:
+#             command:
+#               - node --version 
+#         configFile : "./jest.config.ts"
         
 #       - name: hoppscotch-js-sandbox     
 #         path : "./packages/hoppscotch-js-sandbox/"
