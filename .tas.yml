@@ -20,22 +20,22 @@ postMerge :
         configFile : "./jest.config.js"
       
         
-#       - name: hoppscotch-cli      
-#         path : "./packages/hoppscotch-cli/"
-#         pattern: 
-#           - "./src/__tests__/**/*.spec.ts"
+      - name: hoppscotch-cli      
+        path : "./packages/hoppscotch-cli/"
+        pattern: 
+          - "./src/__tests__/**/*.spec.ts"
         
-#         framework : jest
+        framework : jest
         
-#         preRun:
-#           command:
-#             - npm run prepublish
-#             - npm run do-typecheck
+        preRun:
+          command:
+            - npm run prepublish
+            - npm run do-typecheck
         
-#         postRun:
-#             command:
-#               - node --version 
-#         configFile : "./jest.config.ts"
+        postRun:
+            command:
+              - node --version 
+        configFile : "./jest.config.ts"
         
       - name: hoppscotch-js-sandbox     
         path : "./packages/hoppscotch-js-sandbox/"
