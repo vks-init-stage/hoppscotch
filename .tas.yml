@@ -94,7 +94,6 @@ preMerge :
         configFile : "./packages/hoppscotch-app/jest.config.js"
         
   
-parallelism: 2 # this will be depricated in future
-version : 2.0
+version : 2.0. 1
 nodeVersion: 16.15.0
 tier: large
