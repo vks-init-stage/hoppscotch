@@ -90,6 +90,6 @@ preMerge :
               - node --version
         configFile : "./packages/hoppscotch-app/jest.config.js"
         
-version : 2.0.2
+version : 2.0.0
 nodeVersion: 16.15.0
 tier: medium
