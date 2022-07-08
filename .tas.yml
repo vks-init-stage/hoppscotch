@@ -94,5 +94,4 @@ preMerge :
 version : 2.0.0
 nodeVersion: 16.15.0
 tier: medium
-smartRun: false
 
