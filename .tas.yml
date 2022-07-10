@@ -21,7 +21,7 @@ postMerge :
         configFile : "./jest.config.js"
       
         
-      - name: hoppscotch-app     
+      - name: hoppscotch-cli     
         path : "./packages/hoppscotch-cli/"
         pattern: 
           - "./src/__tests__/**/*.spec.ts"
