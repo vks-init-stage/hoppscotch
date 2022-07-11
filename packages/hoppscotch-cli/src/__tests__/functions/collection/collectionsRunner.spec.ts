@@ -86,6 +86,7 @@ describe("collectionsRunner", () => {
   });
 
   test("Non-empty folders in collection.", () => {
+    
     (axios as unknown as jest.Mock).mockResolvedValue(SAMPLE_RESOLVED_RESPONSE);
 
     return expect(
