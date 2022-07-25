@@ -6,6 +6,7 @@ postMerge :
       - cp ./packages/hoppscotch-app/.env.example ./packages/hoppscotch-app/.env
       - pnpm install --shamefully-hoist=true 
 
+
   
   subModules:          #Not to be changed
       
